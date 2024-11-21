@@ -1,0 +1,98 @@
+/* Fondo de pantalla completo con imagen */
+body {
+    margin: 0;
+    padding: 0;
+    background: url(imagenes/fondo.avif) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Contenedor principal */
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+    background: rgb(229, 200, 247); /* Fondo blanco con transparencia */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgb(173, 52, 157);
+    text-align: center;
+    text-decoration: #7c0b73;
+  }
+  
+  /* Texto "Welcome to Veterinary Happy Paws" */
+h2,h1{
+    font-size: 30px;
+    font-style: italic;
+    color: #7503aa;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+
+
+  }
+  
+  /* Estilo para el formulario */
+  .login-form {
+    margin-top: 40px;
+  }
+  
+  /* Campos de entrada */
+  .input-group {
+    margin-bottom: 12px;
+    text-align: left;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #9b59b6;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-group input:focus {
+    border-color: #7c0b73; /* Color rosa en focus */
+    outline: none;
+  }
+  
+  .btn-login {
+    background-color: #9b59b6; /* Color morado */
+    color: rgb(255, 237, 237);
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 25px;
+    width: 100%;
+  }
+  
+  .btn-login:hover {
+    background-color: #803f9c; /* Morado más oscuro al pasar el cursor */
+  }
+  
+  /* Botón para redirigir al registro */
+  .btn-login-redirect {
+    background-color: transparent;
+
+    border: 2px  #9b59b6;
+    padding: 3px ;
+    font-size: 16px;
+    cursor: pointer;
+    width: 60%;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-login-redirect:hover {
+    background-color: #9f3ac7;
+    color: rgb(2, 2, 2);
+  }
+  
+  .inicioseccion {
+    margin-top: 20px;
+  }
+
+

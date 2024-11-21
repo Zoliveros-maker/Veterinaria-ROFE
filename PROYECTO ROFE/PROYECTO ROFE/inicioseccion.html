@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Veterinaria</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-form">
+      <h2>Bienvenido a Veterinaria </h2>
+      <h1>Happy Paws <img src="imagenes/cursor.png" width="25px"></h1> 
+      <p>Por favor, ingresa tus datos para acceder.</p>
+
+      <!-- Formulario de Login con id="formLogin" -->
+      <form id="formLogin" method="POST">
+        <div class="input-group">
+          <label for="username">Usuario</label>
+          <input type="text" id="username" name="username" placeholder="Correo Electrónico" required>
+        </div>
+
+        <div class="input-group">
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" name="password" placeholder="Contraseña" required>
+        </div>
+
+        <div class="button-group">
+          <button type="submit" class="btn-login">Iniciar sesión</button>
+        </div>
+      </form>
+
+      <!-- Botón de redirección "Aún no tienes cuenta" -->
+      <div class="inicioseccion">
+        <button id="loginRedirectButton" class="btn-login-redirect">¿Aún no tienes cuenta? Registrate</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="inicioseccion.js"></script>
+</body>
+</html>
