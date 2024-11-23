@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Verificar si ya existe un usuario registrado
         const usuarioRegistrado = JSON.parse(localStorage.getItem("usuarioRegistrado"));
 
+
         // Si no hay un usuario registrado, permite el registro del nuevo usuario
         if (usuarioRegistrado) {
             // Verificar si el correo electrónico del usuario ya está registrado
@@ -35,6 +36,8 @@ document.addEventListener("DOMContentLoaded", function() {
             password: password,
             genero: genero
         };
+
+        localStorage.setItem("nombres",JSON.stringify(usuarioNombre));
 
         // Guardar el nuevo usuario en el localStorage
         localStorage.setItem("usuarioRegistrado", JSON.stringify(usuario));

@@ -1,7 +1,7 @@
 // Evento de clic en el botón "¿Aún no tienes cuenta? Registrarse"
 document.getElementById("loginRedirectButton").addEventListener("click", function() {
     // Redirigir a la página de registro (registrarse.html)
-    window.location.href = "registrarse.html"; // Cambia esta URL si es necesario
+    window.location.href = "registrarse.html";
 });
 
 // Evento para el formulario de login
@@ -20,7 +20,7 @@ document.getElementById("formLogin").addEventListener("submit", function(event) 
         // Si no hay usuario registrado, mostrar mensaje de alerta
         alert("No tienes una cuenta registrada. Por favor, regístrate primero.");
         // Redirigir a la página de registro
-        window.location.href = "registrarse.html"; // Cambia esta URL a la página de registro si lo deseas
+        window.location.href = "registrarse.html"; 
         return;
     }
 
@@ -29,7 +29,7 @@ document.getElementById("formLogin").addEventListener("submit", function(event) 
         // Si las credenciales son correctas, guardar el estado de sesión
         localStorage.setItem("usuarioActivo", JSON.stringify(usuarioRegistrado));
          // Redirigir a la página principal
-        window.location.href = "menu.html"; // Cambia esta URL a la página que desees
+        window.location.href = "menu.html";
     }
      else {
         // Si las credenciales no coinciden, mostrar un mensaje de error

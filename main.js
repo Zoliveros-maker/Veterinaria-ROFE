@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const usuarioNombre = localStorage.getItem("usuarioNombre"); // Obtener el nombre del usuario
         if (usuarioNombre) {
             const usuarioDisplay = document.getElementById("usuarioNombre");
-            usuarioDisplay.textContent = `Bienvenido, ${usuarioNombre}`; // Mostrar el nombre en el menú
         }
     }
 
