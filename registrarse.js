@@ -43,12 +43,12 @@ document.addEventListener("DOMContentLoaded", function() {
         alert("¡Registro exitoso!");
 
         // Redirigir a la página de login después de registrar
-        window.location.href = "inicioseccion.html"; // Cambia esta URL a la que desees
+        window.location.href = "index.html"; // Cambia esta URL a la que desees
     });
 
     // Event listener para el botón "Ya tienes cuenta"
     document.getElementById("loginRedirectButton").addEventListener("click", function() {
         // Redirigir al usuario a la página de inicio de sesión
-        window.location.href = "inicioseccion.html"; // Cambia esta URL a la que desees
+        window.location.href = "index.html"; // Cambia esta URL a la que desees
     });
 });

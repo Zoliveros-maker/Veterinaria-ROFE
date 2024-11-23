@@ -28,10 +28,10 @@ document.getElementById("formLogin").addEventListener("submit", function(event) 
     if (usuarioRegistrado.email === email && usuarioRegistrado.password === password) {
         // Si las credenciales son correctas, guardar el estado de sesión
         localStorage.setItem("usuarioActivo", JSON.stringify(usuarioRegistrado));
-
-        // Redirigir a la página principal
-        window.location.href = "indice.html"; // Cambia esta URL a la página que desees
-    } else {
+         // Redirigir a la página principal
+        window.location.href = "menu.html"; // Cambia esta URL a la página que desees
+    }
+     else {
         // Si las credenciales no coinciden, mostrar un mensaje de error
         alert("Correo electrónico o contraseña incorrectos.");
     }

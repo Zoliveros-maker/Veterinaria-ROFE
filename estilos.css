@@ -1,98 +1,240 @@
 /* Fondo de pantalla completo con imagen */
-body {
-    margin: 0;
-    padding: 0;
-    background: url(imagenes/fondo.avif) no-repeat center center fixed;
-    background-size: cover;
-    font-family: 'Arial', sans-serif;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.Ingreso {
+  margin: 0;
+  padding: 0;
+  background: url(imagenes/fondo.avif) no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  /* Contenedor principal */
-  .login-container {
-    width: 100%;
-    max-width: 400px;
-    background: rgb(229, 200, 247); /* Fondo blanco con transparencia */
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgb(173, 52, 157);
-    text-align: center;
-    text-decoration: #7c0b73;
-  }
-  
-  /* Texto "Welcome to Veterinary Happy Paws" */
+/* Contenedor principal */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  background: rgb(229, 200, 247); /* Fondo blanco con transparencia */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgb(173, 52, 157);
+  text-align: center;
+  text-decoration: #7c0b73;
+}
+
+/* Texto "Bienvenido a  Veterinara Happy Paws" */
 h2,h1{
-    font-size: 30px;
-    font-style: italic;
-    color: #7503aa;
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
+  font-size: 30px;
+  font-style: italic;
+  color: #7503aa;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
 
 
-  }
-  
-  /* Estilo para el formulario */
-  .login-form {
-    margin-top: 40px;
-  }
-  
-  /* Campos de entrada */
-  .input-group {
-    margin-bottom: 12px;
-    text-align: left;
-  }
-  
-  .input-group input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 2px solid #9b59b6;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: border-color 0.3s ease;
-  }
-  
-  .input-group input:focus {
-    border-color: #7c0b73; /* Color rosa en focus */
-    outline: none;
-  }
-  
-  .btn-login {
-    background-color: #9b59b6; /* Color morado */
-    color: rgb(255, 237, 237);
-    padding: 12px 25px;
-    font-size: 16px;
-    border-radius: 25px;
-    width: 100%;
-  }
-  
-  .btn-login:hover {
-    background-color: #803f9c; /* Morado más oscuro al pasar el cursor */
-  }
-  
-  /* Botón para redirigir al registro */
-  .btn-login-redirect {
-    background-color: transparent;
+}
 
-    border: 2px  #9b59b6;
-    padding: 3px ;
-    font-size: 16px;
-    cursor: pointer;
-    width: 60%;
-    transition: all 0.3s ease;
-  }
-  
-  .btn-login-redirect:hover {
-    background-color: #9f3ac7;
-    color: rgb(2, 2, 2);
-  }
-  
-  .inicioseccion {
-    margin-top: 20px;
-  }
+/* Estilo para el formulario */
+.login-form {
+  margin-top: 40px;
+}
+
+/* Campos de entrada */
+.input-group {
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #9b59b6;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #7c0b73; /* Color rosa en focus */
+  outline: none;
+}
+
+.btn-login {
+  background-color: #9b59b6; /* Color morado */
+  color: rgb(255, 237, 237);
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 25px;
+  width: 100%;
+}
+
+.btn-login:hover {
+  background-color: #803f9c; /* Morado más oscuro al pasar el cursor */
+}
+
+/* Botón para redirigir al registro */
+.btn-login-redirect {
+  background-color: transparent;
+  border: 2px  #9b59b6;
+  padding: 3px ;
+  font-size: 16px;
+  cursor: pointer;
+  width: 60%;
+  transition: all 0.3s ease;
+}
+
+.btn-login-redirect:hover {
+  background-color: #9f3ac7;
+  color: rgb(2, 2, 2);
+}
+
+.inicioseccion {
+  margin-top: 20px;
+} 
 
 
+/* Inicio de la pagina */
+.inicioseccion {
+  margin-top: 20px;
+} 
+
+
+/* Inicio de la pagina */
+.Inicio{
+  font-family: Arial, sans-serif;
+  background-color: #f7f4fc;
+  background-image: url(imagenes/fondo2.jpg); /* Coloca tu imagen de huellas */
+  background-size: cover;
+  margin: 100;
+  padding: 100;
+  color: #000000;
+}
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Menú lateral */
+.sidebar {
+  width: 20%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h1 {
+  font-size: 20px;
+  color: #6a1b9a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #4A4A4A;
+  font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+  color: #6a1b9a;
+}
+
+/* Sección principal */
+.main {
+  width: 75%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Sobre nosotros */
+.about {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.about h2 {
+  font-size: 24px;
+  color: #6a1b9a;
+}
+
+.about p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Servicios */
+.services {
+  margin-bottom: 20px;
+}
+
+.services h2 {
+  font-size: 24px;
+  color: #6a1b9a;
+  margin-bottom: 10px;
+}
+
+.services .service-item {
+  margin-bottom: 15px;
+}
+
+.services .service-item h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+.services .service-item p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Reseñas */
+.reviews {
+  margin-bottom: 20px;
+}
+
+.reviews h2 {
+  font-size: 24px;
+  color: #6a1b9a;
+  margin-bottom: 10px;
+}
+
+.reviews .review-item {
+  margin-bottom: 10px;
+}
+
+.reviews .review-item p {
+  font-style: italic;
+  font-size: 14px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #777;
+}

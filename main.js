@@ -1,35 +1,30 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const usuarioActivo = JSON.parse(localStorage.getItem("usuarioActivo"));
+document.addEventListener("DOMContentLoaded", function () {
+    const usuarioActivo = localStorage.getItem("usuarioActivo");
 
-    if (usuarioActivo) {
-        const menu = document.getElementById("menu");
-
-        // Verificar si el usuario y el botón de cerrar sesión ya existen
-        const liUsuarioExistente = document.getElementById("usuarioActivo");
-        const liCerrarSesionExistente = document.getElementById("cerrarSesion");
-
-        if (!liUsuarioExistente && !liCerrarSesionExistente) {
-            // Crear el elemento del usuario y el botón de cerrar sesión
-            const liUsuario = document.createElement("li");
-            liUsuario.id = "usuarioActivo"; // Asegúrate de asignar un id único para evitar duplicados
-            liUsuario.textContent = usuarioActivo.nombres;
-
-            
-
-            const liCerrarSesion = document.createElement("li");
-            liCerrarSesion.id = "cerrarSesion"; // Asegúrate de asignar un id único para evitar duplicados
-            const botonCerrarSesion = document.createElement("a");
-            botonCerrarSesion.href = "#";
-            botonCerrarSesion.textContent = "Cerrar Sesión";
-            botonCerrarSesion.addEventListener("click", function() {
-                localStorage.removeItem("usuarioActivo");
-                window.location.reload();
-            });
-
-            liCerrarSesion.appendChild(botonCerrarSesion);
-            menu.appendChild(liCerrarSesion);
-            menu.appendChild(liUsuario);
-           
+    // Si no hay usuario activo, redirigir al login
+    if (!usuarioActivo) {
+        window.location.href = "index.html"; // Redirigir al login si no hay usuario activo
+    } else {
+        const usuarioNombre = localStorage.getItem("usuarioNombre"); // Obtener el nombre del usuario
+        if (usuarioNombre) {
+            const usuarioDisplay = document.getElementById("usuarioNombre");
+            usuarioDisplay.textContent = `Bienvenido, ${usuarioNombre}`; // Mostrar el nombre en el menú
         }
+    }
+
+    // Manejador para el enlace de "Cerrar Sesión"
+    const cerrarSesionLink = document.querySelector("a[href='#cerrar-sesion']");
+    if (cerrarSesionLink) {
+        cerrarSesionLink.addEventListener("click", function (e) {
+            e.preventDefault(); // Evita la acción por defecto del enlace
+
+            // Eliminar datos del usuario de localStorage
+            localStorage.removeItem("usuarioActivo");
+            localStorage.removeItem("usuarioNombre");
+
+            // Redirigir al login después de cerrar sesión
+            alert("Has cerrado sesión correctamente.");
+            window.location.href = "index.html"; // Cambiar la URL a la página de inicio de sesión
+        });
     }
 });
