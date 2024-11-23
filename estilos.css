@@ -214,19 +214,6 @@ h2,h1{
 }
 
 
-/* Estilo general para el cuerpo */
-body {
-  background-image: url(imagenes/fondo.avif);
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
 /* Sección de registro */
 #registro-section {
   background-color: #fff;
