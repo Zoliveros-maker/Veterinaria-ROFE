@@ -13,14 +13,12 @@
 
 /* Contenedor principal */
 .login-container {
-  width: 100%;
-  max-width: 400px;
+  max-width: 600px;
   background: rgb(229, 200, 247); /* Fondo blanco con transparencia */
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgb(173, 52, 157);
   text-align: center;
-  text-decoration: #7c0b73;
 }
 
 /* Texto "Bienvenido a  Veterinara Happy Paws" */
@@ -31,8 +29,6 @@ h2,h1{
   margin: 0;
   padding: 0;
   font-weight: bold;
-
-
 }
 
 /* Estilo para el formulario */
@@ -77,25 +73,12 @@ h2,h1{
 /* Botón para redirigir al registro */
 .btn-login-redirect {
   background-color: transparent;
-  border: 2px  #9b59b6;
-  padding: 3px ;
   font-size: 16px;
   cursor: pointer;
   width: 60%;
   transition: all 0.3s ease;
 }
 
-.btn-login-redirect:hover {
-  background-color: #9f3ac7;
-  color: rgb(2, 2, 2);
-}
-
-.inicioseccion {
-  margin-top: 20px;
-} 
-
-
-/* Inicio de la pagina */
 .inicioseccion {
   margin-top: 20px;
 } 
@@ -227,5 +210,98 @@ h2,h1{
   text-align: center;
   margin-top: 20px;
   font-size: 12px;
-  color: #777;
+  color: #000000;
+}
+
+
+/* Estilo general para el cuerpo */
+body {
+  background-image: url(imagenes/fondo.avif);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Sección de registro */
+#registro-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgb(200, 0, 255);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+#registro-section h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Formulario */
+#registroForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#registroForm label {
+  text-align: left;
+  font-size: 14px;
+  color: #555;
+  font-weight: bold;
+}
+
+#registroForm input,
+#registroForm select {
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #be00fd;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#registroForm input:focus,
+#registroForm select:focus {
+  outline: none;
+  border-color: #d900ff;
+}
+
+/* Botón de registro */
+#registroForm button {
+  background-color: #cc00ff76;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#registroForm button:hover {
+  background-color: #7d00b3;
+}
+
+/* Redirección a iniciar sesión */
+#login-redirect-container {
+  margin-top: 15px;
+}
+
+#loginRedirectButton {
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#loginRedirectButton:hover {
+  color: #9333b6;
 }

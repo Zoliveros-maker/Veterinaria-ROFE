@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const formRegistro = document.getElementById("formRegistro");
+    const registroForm = document.getElementById("registroForm");
 
-    formRegistro.addEventListener("submit", function(event) {
+    registroForm.addEventListener("submit", function(event) {
         event.preventDefault(); // Evita que el formulario se envíe y recargue la página
 
         // Obtener los datos del formulario
-        const nombres = document.getElementById("nombres").value;
-        const email = document.getElementById("email").value;
-        const password = document.getElementById("password").value;
-        const genero = document.getElementById("genero").value;
+        const nombres = document.getElementById("registroNombres").value;
+        const email = document.getElementById("registroEmail").value;
+        const password = document.getElementById("registroPassword").value;
+        const genero = document.getElementById("registroGenero").value;
 
         // Validar los campos (opcional)
         if (nombres === "" || email === "" || password === "" || genero === "") {
@@ -36,8 +36,6 @@ document.addEventListener("DOMContentLoaded", function() {
             password: password,
             genero: genero
         };
-
-        localStorage.setItem("nombres",JSON.stringify(usuarioNombre));
 
         // Guardar el nuevo usuario en el localStorage
         localStorage.setItem("usuarioRegistrado", JSON.stringify(usuario));
